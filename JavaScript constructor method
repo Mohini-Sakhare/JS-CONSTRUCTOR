@@ -1,0 +1,9 @@
+## JavaScript Constructor Method
+A constructor in JavaScript is a special function used to create and initialize objects. 
+It sets up object properties and is typically invoked using the new keyword. 
+Constructors allow for the creation of multiple instances with similar properties and methods.
+
+** In JavaScript, constructors can be defined in two main ways
+
+Function Constructor (Before ES6)
+Class Constructor (ES6 and Beyond)
