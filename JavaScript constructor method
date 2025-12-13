@@ -24,3 +24,11 @@ function Car(make, model, year) {
 
 let myCar = new Car('Toyota', 'Camry', 2020);
 console.log(myCar.getCarInfo());
+
+output:-
+2020 Toyota Camry
+The Car function is a constructor function.
+Inside the constructor function, the this keyword refers to the new instance of the object being created.
+It assigns values to the make, model, and year properties.
+The getCarInfo method is also attached to the new object, which returns a string with the car's details.
+
