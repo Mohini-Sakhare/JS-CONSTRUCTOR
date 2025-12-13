@@ -49,3 +49,10 @@ class Car {
 
 let myCar = new Car('Honda', 'Civic', 2022);
 console.log(myCar.getCarInfo());
+
+output:-
+2022 Honda Civic
+The Car class contains a special method called constructor().
+This method is called automatically when a new instance of the class is created using the new keyword.
+The constructor() method initializes the properties (make, model, year) for the new object.
+Methods like getCarInfo can be defined directly inside the class.
