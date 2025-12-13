@@ -7,3 +7,20 @@ Constructors allow for the creation of multiple instances with similar propertie
 
 Function Constructor (Before ES6)
 Class Constructor (ES6 and Beyond)
+
+1. Function Constructor Method (Before ES6)
+Before ES6, JavaScript used constructor functions to create and initialize objects. 
+A constructor function is essentially a regular function that is invoked using the new keyword. 
+Here's how you define a constructor function.
+e.g.
+function Car(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.getCarInfo = function () {
+        return `${this.year} ${this.make} ${this.model}`;
+    };
+}
+
+let myCar = new Car('Toyota', 'Camry', 2020);
+console.log(myCar.getCarInfo());
