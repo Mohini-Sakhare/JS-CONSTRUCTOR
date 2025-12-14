@@ -90,3 +90,15 @@ prints { name: 'Mohini', age: 26 }
 Person { name: 'Manoj', age: 24 }
 In the above code the new keyword is being used to convert function prints into a object named prints
 In the Person class the constructor function is being converted into an object using the new keyword
+
+## Object.create() function in JavaScript
+In real life prototype means a copy of something same is the case in JavaScript here prototype means a copy of a object, function or class.
+Here in this scenario Object.create() is used to create a copy of a object and to copy all it's properties into itself without the help of constructor function.
+
+const obj={
+    name:'Mohini',
+    age:26
+}
+const obj1=Object.create(obj)
+obj1.class='10th'
+console.log(obj1.name)
