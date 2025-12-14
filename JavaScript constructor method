@@ -65,3 +65,23 @@ The constructor implicitly returns the newly created object, allowing access to 
 
 ## new keyword in JavaScript
 The new keyword in JavaScript is used to create an object out of a constructor function in a class representation and also from the normal function's.
+
+e.g.
+//Object from a function
+function prints(name,age)
+{
+    this.name=name
+    this.age=age
+}
+const result=new prints('Mohini',26)
+console.log(result)
+//Object from a class
+class Person{
+    constructor(name,age)
+    {
+        this.name=name
+        this.age=age
+    }
+}
+const result1=new Person('Manoj',24)
+console.log(result1)
