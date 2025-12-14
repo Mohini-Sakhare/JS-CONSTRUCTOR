@@ -85,3 +85,8 @@ class Person{
 }
 const result1=new Person('Manoj',24)
 console.log(result1)
+
+prints { name: 'Mohini', age: 26 }
+Person { name: 'Manoj', age: 24 }
+In the above code the new keyword is being used to convert function prints into a object named prints
+In the Person class the constructor function is being converted into an object using the new keyword
