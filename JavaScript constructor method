@@ -56,3 +56,12 @@ The Car class contains a special method called constructor().
 This method is called automatically when a new instance of the class is created using the new keyword.
 The constructor() method initializes the properties (make, model, year) for the new object.
 Methods like getCarInfo can be defined directly inside the class.
+
+## How constructor works in JavaScript?
+A constructor is a special function used to create and initialize objects, defined using the function keyword or class syntax.
+The new keyword triggers the constructor, creating a new object and setting this to refer to it.
+Inside the constructor, properties are assigned to the object using this, and can be set dynamically via constructor arguments.
+The constructor implicitly returns the newly created object, allowing access to its properties and methods.
+
+## new keyword in JavaScript
+The new keyword in JavaScript is used to create an object out of a constructor function in a class representation and also from the normal function's.
