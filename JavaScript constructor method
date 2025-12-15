@@ -102,3 +102,28 @@ const obj={
 const obj1=Object.create(obj)
 obj1.class='10th'
 console.log(obj1.name)
+
+output:-
+Mohini
+In the above code the obj is the first object created and then after the obj1 is created with the help of Object.create() property in JavaScript
+All the properties of obj is copied into obj1 and then can be accessed with the help of obj1
+
+## Object Factory Functions
+A factory function is a regular function that returns a new object, making it a simple and reusable way to create multiple instances without using new.
+
+e.g.
+function createPerson(name, age) {
+    return {
+        name: name,
+        age: age,
+        greet: function() {
+            console.log(`Hello, my name is ${this.name}`);
+        }
+    };
+}
+
+const person1 = createPerson("Mohini", 26);
+const person2 = createPerson("Manoj", 24);
+
+person1.greet(); 
+person2.greet();
