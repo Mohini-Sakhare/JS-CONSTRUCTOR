@@ -127,3 +127,11 @@ const person2 = createPerson("Manoj", 24);
 
 person1.greet(); 
 person2.greet();
+
+output:
+Hello, my name is Mohini 
+Hello, my name is Manoj
+A factory function generates and returns a new object every time it is called, making object creation simple and reusable.
+Unlike constructor functions, factory functions do not require the new keyword, reducing the chances of errors related to this binding.
+Factory functions can include private variables and additional logic inside them, improving security and modularity in code design.
+Since they don’t rely on prototypes, factory functions offer a straightforward approach, making them easier to understand and modify.
