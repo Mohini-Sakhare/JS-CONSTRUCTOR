@@ -135,3 +135,21 @@ A factory function generates and returns a new object every time it is called, m
 Unlike constructor functions, factory functions do not require the new keyword, reducing the chances of errors related to this binding.
 Factory functions can include private variables and additional logic inside them, improving security and modularity in code design.
 Since they don’t rely on prototypes, factory functions offer a straightforward approach, making them easier to understand and modify.
+
+## Constructor with default values
+A constructor with default values allows you to specify default values for properties if no values are provided during object creation.
+This helps in ensuring that the object always has valid properties, even if some arguments are missing.
+
+e.g.
+function Person(name = "Unknown", age = 0) {
+    this.name = name;
+    this.age = age;
+}
+
+const person1 = new Person("Mohini", 26);
+const person2 = new Person("Manoj");  
+const person3 = new Person();  
+
+console.log(person1);  
+console.log(person2); 
+console.log(person3);
