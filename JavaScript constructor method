@@ -153,3 +153,8 @@ const person3 = new Person();
 console.log(person1);  
 console.log(person2); 
 console.log(person3);
+
+output:-
+Person { name: 'Mohini', age: 26 }
+Person { name: 'Manoj', age: 0 }
+Person { name: 'Unknown', age: 0 }
