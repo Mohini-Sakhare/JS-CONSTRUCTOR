@@ -165,3 +165,22 @@ The parameters name = "Unknown" and age = 0 ensure that if no values are provide
 When creating person1, both name and age are provided. For person2, only the name is provided, so age defaults to 0.
 For person3, both name and age use the default values.
 The console.log() statements print the objects, showing how default values are applied when arguments are missing.
+
+## Constructor with method on prototypes
+In JavaScript, you can add methods to the prototype of a constructor, allowing all instances created from that constructor to share the same method.
+This helps in optimizing memory usage, as the method is not recreated for each instance.
+e.g.
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+};
+
+const person1 = new Person("Mohini", 26);
+const person2 = new Person("Manoj", 24);
+
+person1.greet();  
+person2.greet();
