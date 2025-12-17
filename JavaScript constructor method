@@ -184,3 +184,7 @@ const person2 = new Person("Manoj", 24);
 
 person1.greet();  
 person2.greet();
+
+output:-
+Hello, my name is Mohini and I am 26 years old.
+Hello, my name is Manoj and I am 24 years old.
