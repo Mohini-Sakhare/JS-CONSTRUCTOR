@@ -158,3 +158,10 @@ output:-
 Person { name: 'Mohini', age: 26 }
 Person { name: 'Manoj', age: 0 }
 Person { name: 'Unknown', age: 0 }
+
+The Person constructor is defined with default values for name and age.
+If no values are passed when creating an object, these defaults are used.
+The parameters name = "Unknown" and age = 0 ensure that if no values are provided, the object will still have valid properties (name and age).
+When creating person1, both name and age are provided. For person2, only the name is provided, so age defaults to 0.
+For person3, both name and age use the default values.
+The console.log() statements print the objects, showing how default values are applied when arguments are missing.
