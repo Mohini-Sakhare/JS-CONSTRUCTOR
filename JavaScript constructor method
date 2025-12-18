@@ -222,3 +222,11 @@ class two extends one{
 const person1=new one('Manoj')
 const person2=new two('Mohini',26)
 console.log(person2.greet())
+
+output:
+Hello Mohini 
+The two class inherits the name property from the one class using super(name) in its constructor.
+super(name) calls the one class's constructor, initializing the name property in the two class.
+The two class adds its own age property, which is not present in the one class.
+When creating an instance of person2 (the two class), it inherits the name property from the one class and has its own age property.
+This demonstrates how a child class can access properties from both the parent class and its own constructor.
