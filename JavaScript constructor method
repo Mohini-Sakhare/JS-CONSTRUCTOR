@@ -188,3 +188,8 @@ person2.greet();
 output:-
 Hello, my name is Mohini and I am 26 years old.
 Hello, my name is Manoj and I am 24 years old.
+
+The Person constructor initializes name and age properties when a new instance is created.
+The greet() method is added to the prototype of Person. This means the method is shared across all instances of Person, saving memory.
+Instances like person1 and person2 are created using the new keyword. They inherit the greet() method from the Person.prototype.
+The greet() method is called on each instance. Since the method is shared via the prototype, both person1 and person2 can use it, demonstrating the shared behavior
