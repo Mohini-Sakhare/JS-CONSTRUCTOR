@@ -193,3 +193,32 @@ The Person constructor initializes name and age properties when a new instance i
 The greet() method is added to the prototype of Person. This means the method is shared across all instances of Person, saving memory.
 Instances like person1 and person2 are created using the new keyword. They inherit the greet() method from the Person.prototype.
 The greet() method is called on each instance. Since the method is shared via the prototype, both person1 and person2 can use it, demonstrating the shared behavior
+
+## Constructor with inheritance
+This code demonstrates how inheritance in classes allows a child class to inherit both properties and methods from a parent class constructor.
+The child class (two) inherits the name property from the parent class (one) using the super() keyword.
+
+e. g.
+class one{
+    constructor(name)
+    {
+        this.name=name
+    }
+    greet()
+    {
+        return `Hello ${this.name}`
+    }
+}
+class two extends one{
+    constructor(name,age)
+    {
+        super(name)
+        this.age=age
+    }
+    greet1(){
+        return `Your age is ${this.age}`
+    }
+}
+const person1=new one('Manoj')
+const person2=new two('Mohini',26)
+console.log(person2.greet())
