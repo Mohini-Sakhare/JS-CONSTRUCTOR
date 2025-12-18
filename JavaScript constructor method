@@ -230,3 +230,10 @@ super(name) calls the one class's constructor, initializing the name property in
 The two class adds its own age property, which is not present in the one class.
 When creating an instance of person2 (the two class), it inherits the name property from the one class and has its own age property.
 This demonstrates how a child class can access properties from both the parent class and its own constructor.
+
+## Advantages of constructor
+Reusable Code: Constructors allow creating multiple instances of objects with similar properties and methods, promoting code reuse.
+Encapsulation: They encapsulate the logic for setting up an object, keeping initialization clean and organized.
+Object Initialization: Constructors make it easy to initialize objects with specific values (via parameters) when creating new instances.
+Inheritance Support: Constructors enable inheritance, allowing child objects to inherit properties and methods from parent constructors.
+Cleaner and More Maintainable Code: Constructors keep object creation logic in one place, making the code more readable and easier to maintain, especially for complex objects.
